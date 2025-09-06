@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glowing Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Glowing Digital Clock</h2>
+    <div class="clock">
+      <div>
+        <span id="hour">00</span>
+        <span class="text">Hours</span>
+      </div>
+      <div>
+        <span id="minutes">00</span>
+        <span class="text">Minutes</span>
+      </div>
+      <div>
+        <span id="seconds">00</span>
+        <span class="text">Seconds</span>
+      </div>
+      <div>
+        <span id="ampm">AM</span>
+      </div>
+    </div>
+
+    <div class="color-controls">
+      <div class="color-control">
+        <label for="hue">Glow Color</label>
+        <input type="range" id="hue" min="0" max="360" value="190" />
+        <div class="color-preview" id="hue-preview"></div>
+      </div>
+      
+      <div class="color-control">
+        <label for="saturation">Saturation</label>
+        <input type="range" id="saturation" min="0" max="100" value="100" />
+        <div class="color-preview" id="saturation-preview"></div>
+      </div>
+      
+      <div class="color-control">
+        <label for="brightness">Brightness</label>
+        <input type="range" id="brightness" min="0" max="100" value="100" />
+        <div class="color-preview" id="brightness-preview"></div>
+      </div>
+
+      <div class="preset-colors">
+        <div class="preset-color" style="background-color: #ff3333;" data-color="#ff3333"></div>
+        <div class="preset-color" style="background-color: #33ff33;" data-color="#33ff33"></div>
+        <div class="preset-color" style="background-color: #3333ff;" data-color="#3333ff"></div>
+        <div class="preset-color" style="background-color: #ffff33;" data-color="#ffff33"></div>
+        <div class="preset-color" style="background-color: #ff33ff;" data-color="#ff33ff"></div>
+        <div class="preset-color" style="background-color: #33ffff;" data-color="#33ffff"></div>
+        <div class="preset-color" style="background-color: #ffffff;" data-color="#ffffff"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

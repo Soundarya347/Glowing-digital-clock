@@ -1,0 +1,129 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+  color: white;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.clock {
+  display: flex;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.clock div {
+  margin: 10px;
+  position: relative;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 0 0 10px currentColor;
+  border-radius: 5px;
+  box-shadow: 0 0 20px currentColor;
+  transition: all 0.5s ease;
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.9;
+  text-shadow: none;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px currentColor;
+}
+
+.color-controls {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 500px;
+  backdrop-filter: blur(5px);
+}
+
+.color-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-control label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.color-preview {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 5px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+input[type="range"] {
+  width: 150px;
+}
+
+.preset-colors {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.preset-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s;
+}
+
+.preset-color:hover {
+  transform: scale(1.2);
+}
